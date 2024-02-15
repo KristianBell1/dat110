@@ -38,7 +38,7 @@ public class ComputeImpl extends UnicastRemoteObject implements ComputeInterface
 	}
 	public void stop() throws RemoteException {
 		UnicastRemoteObject.unexportObject(this,true);
-		System.out.println("Knuse tryne ditt, også blir serveren shutdown");
+		System.out.println("Knuse tryne ditt Rojas, også blir serveren shutdown");
 	}
 
 
