@@ -19,7 +19,22 @@ public class TempSensorImpl extends UnicastRemoteObject implements TempSensorInt
 	public TempSensorImpl() throws RemoteException {
 		super();
 	}
-	
+
+	@Override
+	public int getTemp() throws RemoteException {
+		return 0;
+	}
+
+	@Override
+	public void setTemp(int temp) throws RemoteException {
+
+	}
+
+	@Override
+	public int getTemperatur() throws RemoteException {
+		return 0;
+	}
+
 	// TODO
 	// implement the remote methods defined in the interface here
 
