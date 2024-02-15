@@ -46,14 +46,18 @@ public class TemperatureDevice extends Thread {
 
             try {
                 tsi.setTemp(sn.read());
-            } catch (RemoteException e) {
+                Thread.sleep(500);
+            } catch (RemoteException | InterruptedException e) {
+
                 throw new RuntimeException(e);
             }
+
+
         }
 		
 		// set the temperature value by calling the setTemperature remote method via the object of TempSensorInterface
 		
-		throw new RuntimeException("RPC TemperatureDevice Client not yet implemented...");
+		// throw new RuntimeException("RPC TemperatureDevice Client not yet implemented...");
 		
 	}
 }

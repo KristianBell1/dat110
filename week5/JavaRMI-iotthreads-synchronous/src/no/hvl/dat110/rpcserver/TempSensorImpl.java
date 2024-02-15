@@ -25,14 +25,16 @@ public class TempSensorImpl extends UnicastRemoteObject implements TempSensorInt
 		return 0;
 	}
 
+	private int temperatur;
 	@Override
 	public void setTemp(int temp) throws RemoteException {
+		temperatur = temp;
 
 	}
 
 	@Override
 	public int getTemperatur() throws RemoteException {
-		return 0;
+		return temperatur;
 	}
 
 	// TODO

@@ -37,18 +37,18 @@ public class DisplayDevice extends Thread {
 		for (int i = 0; i < 10; i++) {
             // get the temperature value by calling the getTemperature remote method via the object of TempSensorInterface
             // print the temperature value to console
-            int tmp = 0;
+            int tmp = 10;
             try {
                 tmp = tsi.getTemperatur();
-                System.out.printf("Temperatur: ", temp);
+                System.out.printf("Temperatur: %s%n", tmp);
                 Thread.sleep(1000);
             } catch (RemoteException | InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            
+
         }
 		
-		throw new RuntimeException("RPC DisplayDevice Client Not yet implemented...");
+		// throw new RuntimeException("RPC DisplayDevice Client Not yet implemented...");
 		
 	}
 }
